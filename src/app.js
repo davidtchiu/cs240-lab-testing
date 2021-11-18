@@ -5,11 +5,11 @@
  */
 function isPrime(num) {
   if (Number.isInteger(num) && num > 2) {
-    let divisor = num - 1;
+    let divisor = 2;
     while (num % divisor != 0) {
-      divisor--;
+      divisor++;
     }
-    return divisor == 1;
+    return divisor == num;
   }
 
   return false;
