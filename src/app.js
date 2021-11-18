@@ -4,15 +4,11 @@
  * @param {number} num
  */
 function isPrime(num) {
-  if (Number.isInteger(num) && num > 2) {
-    let divisor = 2;
-    while (num % divisor != 0) {
-      divisor++;
-    }
-    return divisor == num;
+  let divisor = 2;
+  while (num % divisor != 0) {
+    divisor++;
   }
-
-  return false;
+  return divisor == num;
 }
 
 /**
